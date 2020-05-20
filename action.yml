@@ -1,0 +1,9 @@
+name: "Auto Release Milestone"
+description: "Drafts a Github release based on a newly closed milestone"
+author: "Carlos R"
+outputs:
+  release-url:
+    description: "The url of the github release that was drafted"
+runs:
+  using: "docker"
+  image: "Dockerfile"
