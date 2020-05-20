@@ -15,7 +15,7 @@ if [$event_type != 'closed']; then
     exit 0
 fi
 
-milestone_name = $(jq --raw-output .milestone.title $GTIHUB_EVENT_PATH)
+milestone_name = $(jq --raw-output .milestone.title $GITHUB_EVENT_PATH)
 
 IFS='/' read owner repository <<< "$GITHUB_REPOSITORY"
 
